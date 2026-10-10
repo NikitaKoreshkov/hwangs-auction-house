@@ -1,4 +1,35 @@
-# Hwang's: luxury auction house on Next.js 16 and Postgres
+<div align="center">
+
+# Hwang's Auction House
+
+**A luxury auction house on 11 Postgres tables, no ORM, and a demo mode that needs no database.**
+Catalogue with a client-side filter engine over 18 categories and 108 lots, lot pages
+with certificates, a protocol archive with search and date range, and bidding entry
+points that work the moment the repo is cloned.
+
+**Demo:** [hwangs-auction-house.vercel.app](https://hwangs-auction-house.vercel.app)
+
+![Next.js](https://img.shields.io/badge/next.js-16%20Turbopack-black?logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/react-19-61dafb?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-strict-3178C6?logo=typescript&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/postgreSQL-pg%2C%20no%20ORM-336791?logo=postgresql&logoColor=white)
+![Demo](https://img.shields.io/badge/demo-works%20without%20a%20DB-brightgreen)
+![License](https://img.shields.io/badge/license-all%20rights%20reserved-red)
+
+</div>
+
+## The problem
+
+An auction house sells confidence. A visitor deciding whether to bid on a piece has
+to see the catalogue, the provenance, the certificates and the past protocols — and
+has to be able to filter all of it without waiting on a server round-trip.
+
+The second problem is institutional: results are public record. Protocol documents
+are not an attachment folder, they are a searchable archive with a date range,
+because that is how buyers actually check a house.
+
+---
+
 
 **Demo:** https://hwangs-auction-house.vercel.app — opens without a database. When `DATABASE_URL` is unset the public API answers from the demo catalog in `lib/demo.ts` (18 categories, 108 lots, filters, documents), so the pages, the client-side filter engine and the cart-free bidding flow entry points are all clickable. With a database attached the same routes read Postgres.
 
@@ -15,6 +46,8 @@
     <td colspan="2" align="center"><img src=".github/assets/mobile.jpg" alt="Landing on a 390px viewport" width="300" /></td>
   </tr>
 </table>
+
+---
 
 ## Stack and size
 
